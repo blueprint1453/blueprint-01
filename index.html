@@ -19,6 +19,14 @@
         out()();
        //新的功能
        //新的功能
+         //闭包的概念
+        function out(){
+          var c = 0;
+          function inner () {
+             console.log(this+':'+c);
+          }
+          return inner;
+        }
        
     </script>
     </body>
