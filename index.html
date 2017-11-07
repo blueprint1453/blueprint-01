@@ -8,6 +8,16 @@
         var a =0 
         var b = 10;
         console.log(a+b);
+        //闭包的概念
+        function out(){
+          var c = 0;
+          function inner () {
+             console.log(this+':'+c);
+          }
+          return inner;
+        }
+        out()();
+
     </script>
     </body>
 </html>
